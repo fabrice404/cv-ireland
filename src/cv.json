@@ -1,0 +1,112 @@
+{
+  "firstName": "Fabrice",
+  "lastName": "Lamant",
+  "jobTitle": "Software engineer",
+  "summary": "Software engineer with 10+ years of experience in developing complex web applications, e-commerce websites and APIs, and 5 years of experience in mentoring junior software engineers. Proficient in variety of platforms, languages and systems. Enthusiastic team member and always excited about new challenges.",
+  "experience": [{
+    "jobTitle": "Lead software engineer",
+    "company": "iDVROOM",
+    "link": "https://www.idvroom.com/",
+    "startDate": {
+      "year": 2016,
+      "month": 6
+    },
+    "description": "iDVROOM is a carpooling service focusing on everyday home to work commute. The company is a subsidiary of the French national railway (SNCF).",
+    "projects": [{
+      "title": "HiPay (Tic & Tac)",
+      "teamSize": 6,
+      "role": "Lead software engineer & scrum master",
+      "description": "This strategic project had multiple objectives. Migrate banking partner to be conform to parent house requirements. Anticipate payments increase and related flow analysis. Improve and automate fraud management by limiting manual processing. Facilitate and automate cross-checking of different bank flows.",
+      "responsibilities": [
+        "Leading the project after departure of the previous lead software engineer.",
+        "Designing the whole payment module according to technical, marketing and accounting constraints.",
+        "Developing payment system and integrating Hipay’s payment and marketplace APIs.",
+        "Migrating data from MongoDB to PostgreSQL.",
+        "Implementing functional and unit tests to avoid regressions.",
+        "Building a micro-service for development and testing environments with WebSockets.",
+        "Writing technical and functional documentation.",
+        "Being the scrum master of the team (two-week sprints, daily meetings, sprint pokers, retrospectives, etc.).",
+        "Reporting project progress directly to CTO and CEO."
+      ],
+      "environment": [
+        "PHP, Zend Framework 2, PostgreSQL, Behat, Docker, SOAP & REST APIs,",
+        "JavaScript, NodeJS, AWS Elastic Beanstalk, WebSockets,",
+        "GIT, Jira, ..."
+      ]
+    }, {
+      "title": "Speed API",
+      "teamSize": 3,
+      "role": "Software engineer",
+      "description": "Creating different APIs to respond the needs of strategic partners",
+      "responsibilities": [
+        "Developing an API for the french national rail company (SNCF) to integrate iDVROOM carpools on their trip search, approximatively 300 000 calls per day.",
+        "Developing an API for the car manufacturer Renault to integrate iDVROOM's carpools on the 180 000 cars' R Link dashboard and into My Renault application"
+      ],
+      "environment": [
+        "JavaScript, NodeJS, Amazon API Gateway, AWS Lambda,",
+        "Amazon RDS (PostgreSQL), Amazon DynamoDB"
+      ],
+      "link": "https://aws.amazon.com/fr/solutions/case-studies/idvroom/"
+    }]
+  }, {
+    "jobTitle": "Lead web developer",
+    "company": "Octave",
+    "link": "https://www.octave.biz/",
+    "startDate": {
+      "year": 2012,
+      "month": 10
+    },
+    "endDate": {
+      "year": 2016,
+      "month": 4
+    },
+    "description": "Octave is an omnichannel ERP that natively integrates an e-commerce solution.",
+    "projects": [{
+      "responsibilities": [
+        "Developed the e-commerce framework using ASP.NET / C#, used it to release over 150 b2b & b2c websites.",
+        "Technical mentor and architect for the web team comprised of 4 front-end developers, 4 back-end developers and 4 marketing consultants, managed releases planning and tasks assignment.",
+        "Wrote ticketing and bug tracker website for 300 clients, directly linked to TFS code source control database for live feedback.",
+        "Developed tools to help system administrators to automagically populate and maintain Active Directory, IIS and SQL Server databases.",
+        "Developed webservices based on Windows Management Instrumentation for server hardware monitoring on Centreon/Nagios.",
+        "Helped system administrators for advanced tasks and week-end monitoring."
+      ]
+    }]
+  }, {
+    "jobTitle": "Web developer",
+    "company": "Octave",
+    "link": "https://www.octave.biz/",
+    "startDate": {
+      "year": 2009,
+      "month": 2
+    },
+    "endDate": {
+      "year": 2012,
+      "month": 9
+    },
+    "projects": [{
+      "responsibilities": [
+        "Developed features for e-commerce websites with ASP.NET and C#, integrated new payment systems (ATOS SIPS, Paybox, PayPal, ) and new delivering providers (So Colissimo, Kiala, Chronopost, DPD, etc.)",
+        "Developed SaaS platform connection tool using the Windows COM interop MSTSCLib which allow clients to connect to any RDP server with no need of a tool like Citrix.",
+        "Developed system monitoring tools (availability, load, etc.)"
+      ]
+    }]
+  }, {
+    "jobTitle": "Web developer",
+    "company": "OpenPortal",
+    "link": "https://www.openportal.fr/",
+    "startDate": {
+      "year": 2007,
+      "month": 3
+    },
+    "endDate": {
+      "year": 2009,
+      "month": 1
+    },
+    "projects": [{
+      "responsibilities": [
+        "Developed calendar and planning modules for web-based application OpenPortal with ASP.NET and C#.",
+        "Migrated modules of the application from classic ASP and VB to ASP.NET and C#."
+      ]
+    }]
+  }]
+}

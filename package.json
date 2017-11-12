@@ -1,0 +1,26 @@
+{
+  "name": "cv-ireland",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "moment": "^2.19.2",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0"
+  },
+  "devDependencies": {
+    "load-json-file": "^4.0.0",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "build-css": "node-sass src/cv.scss public/cv.css",
+    "watch-css": "node-sass-chokidar src/cv.scss public/cv.css --watch",
+    "start-js": "react-scripts start",
+    "build-js": "react-scripts build",
+    "start": "npm-run-all --aggregate-output --parallel start-js watch-css",
+    "build": "npm run build-css && build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
