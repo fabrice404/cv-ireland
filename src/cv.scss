@@ -1,16 +1,136 @@
 @import "https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic";
 @import "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700";
+@mixin transform-scale($sx, $sy) {
+  transform: scale($sx, $sy);
+  -webkit-transform: scale($sx, $sy);
+  -moz-transform: scale($sx, $sy);
+  -ms-transform: scale($sx, $sy);
+  -o-transform: scale($sx ,$sy);
+}
+@mixin border-radius($r) {
+  border-radius: $r;
+  -webkit-border-radius: $r;
+  -moz-border-radius: $r;
+  -ms-border-radius: $r;
+  -o-border-radius: $r;
+}
+@mixin transition($t) {
+  transition: $t;
+  -webkit-transition: $t;
+  -moz-transition: $t;
+  -ms-transition: $t;
+  -o-transition: $t;
+}
+$primary: #188fa7;
+$black: #555;
+$grey: #777;
+$lightgrey: #e8e8e8;
+
+* {
+  margin: 0;
+  padding: 0;
+  @include transition(all .4s ease-in-out);
+}
+
+a {
+  color: $primary;
+}
 
 body {
-  font-family: 'Lato',sans-serif;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 50px;
+  color: $black;
+  font-family: 'Lato', sans-serif;
   font-size: 14px;
 
   .me {
+    text-align: center;
+
     .me--name {
-      
-    }
-    .me--jobTitle {
+      color: $primary;
+      font-family: 'Montserrat', sans-serif;
       font-size: 2em;
+      font-weight: 700;
+      margin: 0;
+      text-transform: uppercase;
+      @include transform-scale(1, 1.25);
+    }
+
+    .me--jobTitle {
+      font-size: 1.3em;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+
+  .section {
+    .section--title {
+      border-bottom: 1px solid $lightgrey;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2em;
+      font-weight: 600;
+      margin: 50px 0 15px;
+      text-transform: uppercase;
+      @include transform-scale(1, 1.25);
+    }
+
+    .title-1 {
+      color: $primary;
+      font-family: 'Montserrat',sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .title-2 {
+      color: $grey;
+      font-family: 'Montserrat',sans-serif;
+      font-size: 14px;
+
+      &.company {
+        margin-left: 3px;
+
+        &:before {
+          content: '@';
+          font-size: 0.75em;
+          margin-right: 3px;
+        }
+      }
+    }
+
+    .date {
+      color: $grey;
+      font-family: 'Montserrat',sans-serif;
+      font-size: 13px;
+      margin-left: 5px;
+
+      .date-start {
+        &:before {
+          content: '(';
+        }
+
+        &:after {
+          margin-left: 3px;
+          content: '-';
+        }
+      }
+
+      .date-end {
+        margin-left: 3px;
+
+        &:after {
+          content: ')';
+        }
+      }
+    }
+
+    .link{
+      display: inline-block;
+      float: right;
+    }
+    .project {
+      padding-left:30px;
     }
   }
 }

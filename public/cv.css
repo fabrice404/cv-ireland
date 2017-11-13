@@ -1,7 +1,86 @@
 @import "https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic";
 @import "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700";
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out; }
+
+a {
+  color: #188fa7; }
+
 body {
-  font-family: 'Lato',sans-serif;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 50px;
+  color: #555;
+  font-family: 'Lato', sans-serif;
   font-size: 14px; }
-  body .me .me--jobTitle {
-    font-size: 2em; }
+  body .me {
+    text-align: center; }
+    body .me .me--name {
+      color: #188fa7;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2em;
+      font-weight: 700;
+      margin: 0;
+      text-transform: uppercase;
+      transform: scale(1, 1.25);
+      -webkit-transform: scale(1, 1.25);
+      -moz-transform: scale(1, 1.25);
+      -ms-transform: scale(1, 1.25);
+      -o-transform: scale(1, 1.25); }
+    body .me .me--jobTitle {
+      font-size: 1.3em;
+      font-weight: 500;
+      text-transform: uppercase; }
+  body .section .section--title {
+    border-bottom: 1px solid #e8e8e8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 50px 0 15px;
+    text-transform: uppercase;
+    transform: scale(1, 1.25);
+    -webkit-transform: scale(1, 1.25);
+    -moz-transform: scale(1, 1.25);
+    -ms-transform: scale(1, 1.25);
+    -o-transform: scale(1, 1.25); }
+  body .section .title-1 {
+    color: #188fa7;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5; }
+  body .section .title-2 {
+    color: #777;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 14px; }
+    body .section .title-2.company {
+      margin-left: 3px; }
+      body .section .title-2.company:before {
+        content: '@';
+        font-size: 0.75em;
+        margin-right: 3px; }
+  body .section .date {
+    color: #777;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 13px;
+    margin-left: 5px; }
+    body .section .date .date-start:before {
+      content: '('; }
+    body .section .date .date-start:after {
+      margin-left: 3px;
+      content: '-'; }
+    body .section .date .date-end {
+      margin-left: 3px; }
+      body .section .date .date-end:after {
+        content: ')'; }
+  body .section .link {
+    display: inline-block;
+    float: right; }
+  body .section .project {
+    padding-left: 30px; }
