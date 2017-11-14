@@ -154,7 +154,7 @@
     "description": "I developed a website to manage my family's personnal budget. The webiste is developed with PHP and Symfony2, the data is stored into a PostgreSQL server. I am migrating this project to Amazon Web Services with API Gateway, Lambda functions and RDS, and I will open-source it when it will be finished."
   }, {
     "title": "Wifi thermal sensors",
-    "description": "I built temperature sensors for my house to optimize energy cosumption. The hardware part was built with an ESP8266 module to connect the sensor to my wifi network, and the server side part was develop with NodeJS and data is stored into mongoDB."
+    "description": "I built temperature sensors for my house to optimize energy cosumption. The hardware part was built with an ESP8266 module to connect the sensor to my wifi network, and the server side part was develop with NodeJS and data is stored into MongoDB."
   }],
   "knowledge": [{
     "title": "Operating Systems",
