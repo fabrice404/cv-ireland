@@ -16,7 +16,7 @@
       "title": "HiPay (Tic & Tac)",
       "teamSize": 6,
       "role": "Lead software engineer & scrum master",
-      "description": "This strategic project had multiple objectives. Migrate banking partner to be conform to parent house requirements. Anticipate payments increase and related flow analysis. Improve and automate fraud management by limiting manual processing. Facilitate and automate cross-checking of different bank flows.",
+      "description": "This project had multiple objectives. Migrate banking partner to be conform to parent house requirements. Anticipate payments increase and related flow analysis. Improve and automate fraud management by limiting manual processing. Facilitate and automate cross-checking of different bank flows.",
       "responsibilities": [
         "Leading the project after departure of the previous lead software engineer.",
         "Designing the whole payment module according to technical, marketing and accounting constraints.",
@@ -62,6 +62,7 @@
     },
     "description": "Octave is an omnichannel ERP that natively integrates an e-commerce solution.",
     "projects": [{
+      "title": "Octave Web 6",
       "responsibilities": [
         "Developed the e-commerce framework using ASP.NET / C#, used it to release over 150 b2b & b2c websites.",
         "Technical mentor and architect for the web team comprised of 4 front-end developers, 4 back-end developers and 4 marketing consultants, managed releases planning and tasks assignment.",
@@ -84,6 +85,7 @@
       "month": 9
     },
     "projects": [{
+      "title": "Octave Web 5",
       "responsibilities": [
         "Developed features for e-commerce websites with ASP.NET and C#, integrated new payment systems (ATOS SIPS, Paybox, PayPal, ) and new delivering providers (So Colissimo, Kiala, Chronopost, DPD, etc.)",
         "Developed SaaS platform connection tool using the Windows COM interop MSTSCLib which allow clients to connect to any RDP server with no need of a tool like Citrix.",

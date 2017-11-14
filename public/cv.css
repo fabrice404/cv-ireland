@@ -1,16 +1,20 @@
+@charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic";
 @import "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700";
 * {
   margin: 0;
-  padding: 0;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out; }
+  padding: 0; }
 
 a {
   color: #188fa7; }
+
+ul {
+  list-style-type: none;
+  padding-left: 20px; }
+  ul li:before {
+    color: #188fa7;
+    content: '›';
+    margin-right: 5px; }
 
 body {
   margin: 0 auto;
@@ -25,7 +29,7 @@ body {
       color: #188fa7;
       font-family: 'Montserrat', sans-serif;
       font-size: 2em;
-      font-weight: 700;
+      font-weight: 600;
       margin: 0;
       text-transform: uppercase;
       transform: scale(1, 1.25);
@@ -33,6 +37,9 @@ body {
       -moz-transform: scale(1, 1.25);
       -ms-transform: scale(1, 1.25);
       -o-transform: scale(1, 1.25); }
+      body .me .me--name .me--lastname {
+        margin-left: 5px;
+        font-weight: 400; }
     body .me .me--jobTitle {
       font-size: 1.3em;
       font-weight: 500;
@@ -59,28 +66,33 @@ body {
     color: #777;
     font-family: 'Montserrat',sans-serif;
     font-size: 14px; }
-    body .section .title-2.company {
+    body .section .title-2.job--company {
       margin-left: 3px; }
-      body .section .title-2.company:before {
+      body .section .title-2.job--company:before {
         content: '@';
         font-size: 0.75em;
         margin-right: 3px; }
-  body .section .date {
+  body .section .text-light {
+    color: #777;
+    font-style: italic; }
+  body .section .job .job--date {
     color: #777;
     font-family: 'Montserrat',sans-serif;
     font-size: 13px;
     margin-left: 5px; }
-    body .section .date .date-start:before {
+    body .section .job .job--date .job--dateStart:before {
       content: '('; }
-    body .section .date .date-start:after {
+    body .section .job .job--date .job--dateStart:after {
       margin-left: 3px;
       content: '-'; }
-    body .section .date .date-end {
+    body .section .job .job--date .job--dateEnd {
       margin-left: 3px; }
-      body .section .date .date-end:after {
+      body .section .job .job--date .job--dateEnd:after {
         content: ')'; }
-  body .section .link {
+  body .section .job .job--link {
     display: inline-block;
     float: right; }
-  body .section .project {
-    padding-left: 30px; }
+  body .section .job .job--project {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #e8e8e8; }

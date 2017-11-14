@@ -29,11 +29,23 @@ $lightgrey: #e8e8e8;
 * {
   margin: 0;
   padding: 0;
-  @include transition(all .4s ease-in-out);
 }
 
 a {
   color: $primary;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+
+  li {
+    &:before {
+      color: $primary;
+      content: '›';
+      margin-right: 5px;
+    }
+  }
 }
 
 body {
@@ -51,10 +63,15 @@ body {
       color: $primary;
       font-family: 'Montserrat', sans-serif;
       font-size: 2em;
-      font-weight: 700;
+      font-weight: 600;
       margin: 0;
       text-transform: uppercase;
       @include transform-scale(1, 1.25);
+
+      .me--lastname {
+        margin-left: 5px;
+        font-weight: 400;
+      }
     }
 
     .me--jobTitle {
@@ -88,7 +105,7 @@ body {
       font-family: 'Montserrat',sans-serif;
       font-size: 14px;
 
-      &.company {
+      &.job--company {
         margin-left: 3px;
 
         &:before {
@@ -99,38 +116,48 @@ body {
       }
     }
 
-    .date {
+    .text-light {
       color: $grey;
-      font-family: 'Montserrat',sans-serif;
-      font-size: 13px;
-      margin-left: 5px;
+      font-style: italic;
+    }
 
-      .date-start {
-        &:before {
-          content: '(';
+    .job {
+      .job--date {
+        color: $grey;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 13px;
+        margin-left: 5px;
+
+        .job--dateStart {
+          &:before {
+            content: '(';
+          }
+
+          &:after {
+            margin-left: 3px;
+            content: '-';
+          }
         }
 
-        &:after {
+        .job--dateEnd {
           margin-left: 3px;
-          content: '-';
+
+          &:after {
+            content: ')';
+          }
         }
       }
 
-      .date-end {
-        margin-left: 3px;
-
-        &:after {
-          content: ')';
-        }
+      .job--link {
+        display: inline-block;
+        float: right;
       }
-    }
 
-    .link{
-      display: inline-block;
-      float: right;
-    }
-    .project {
-      padding-left:30px;
+      .job--project {
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid $lightgrey;
+      }
     }
   }
 }
