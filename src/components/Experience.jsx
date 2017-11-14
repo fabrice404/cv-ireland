@@ -37,12 +37,12 @@ const ExperienceItem = props => (
 
 const Project = props => (
   <div className="job--project">
-    {props.title && <div><span className="text-light">Project: </span>{props.title}</div>}
+    {props.title && <div><span className="text-light">Project:</span>{props.title}</div>}
     {props.description && <div>{props.description}</div>}
-    {props.teamSize && <div><span className="text-light">Team size: </span>{props.teamSize}</div>}
-    {props.role && <div><span className="text-light">Role: </span>{props.role}</div>}
-    {props.responsibilities && <div><span className="text-light">Responsibilities: </span><ul>{props.responsibilities.map(item => <ListItem item={item} key={Math.random(0, 1)}/>)}</ul></div>}
-    {props.environment && <div><span className="text-light">Environment: </span><ul>{props.environment.map(item => <ListItem item={item} key={Math.random(0, 1)}/>)}</ul></div>}
+    {props.teamSize && <div><span className="text-light">Team size:</span>{props.teamSize}</div>}
+    {props.role && <div><span className="text-light">Role:</span>{props.role}</div>}
+    {props.responsibilities && <div><span className="text-light">Responsibilities:</span><ul>{props.responsibilities.map(item => <ListItem item={item} key={Math.random(0, 1)}/>)}</ul></div>}
+    {props.environment && <div><span className="text-light">Environment:</span><ul>{props.environment.map(item => <ListItem item={item} key={Math.random(0, 1)}/>)}</ul></div>}
     {props.link && <div><a href={props.link} target="_blank">{props.link}</a></div>}
   </div>
 );

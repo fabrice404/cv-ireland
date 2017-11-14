@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Experience from './Experience.jsx';
 import Education from './Education.jsx';
-import More from './More.jsx';
+import SideProject from './SideProject.jsx';
+import Knowledge from './Knowledge.jsx';
 
 class App extends Component {
   render() {
@@ -19,7 +20,8 @@ class App extends Component {
         </section>
         <Experience experience={this.props.cv.experience}/>
         <Education education={this.props.cv.education}/>
-        <More more={this.props.cv.more}/>
+        <SideProject sideProject={this.props.cv.sideProject}/>
+        <Knowledge knowledge={this.props.cv.knowledge}/>
         <section className="section reference">
           <h3 className="section--title">Reference</h3>
           Will be available on request

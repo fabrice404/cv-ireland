@@ -132,16 +132,13 @@
     "title": "2-year degree in industrial IT and networks for industry and technical services",
     "description": [
       "Computers and microprocessors architecture",
-      "Programing basis (C, C++, Java)",
+      "Programing basis (C, C++, Java) and internet programing languages (PHP, HTML, JavaScript, CSS)",
       "Databases (Query languages, Merise)",
-      "Internet programing languages (PHP, HTML, JavaScript, CSS)",
-      "Network administration",
       "Unified Modeling Language",
       "Real-time computing (C, C++)",
       "Network communications:  RS232 / RS422 / RS485, TCP/IP, CAN, I2C, etc.",
       "Embedded systems",
-      "Applied physics",
-      "Mathematics"
+      "Applied physics and Mathematics"
     ],
     "year": 2006
   }, {
@@ -149,7 +146,38 @@
     "description": ["Engineering science"],
     "year": 2004
   }],
-  "more": [{
+  "sideProject": [{
+    "title": "Webmaster and active member of the non-profit organisation Spirit LAN",
+    "description": "The NPO Spirit LAN is specialized in organizing video games and digital entertainment events. It has organised numerous events related to video-games and electronic sports. Thanks to its experience, Spirit-LAN regularly makes its know-how available to propose initiations, exhibitions and prevention forums on the benefits and harms of video games and internet."
+  }, {
+    "title": "Personnal budget software",
+    "description": "I developed a website to manage my family's personnal budget. The webiste is developed with PHP and Symfony2, the data is stored into a PostgreSQL server. I am migrating this project to Amazon Web Services with API Gateway, Lambda functions and RDS, and I will open-source it when it will be finished."
+  }, {
+    "title": "Wifi thermal sensors",
+    "description": "I built temperature sensors for my house to optimize energy cosumption. The hardware part was built with an ESP8266 module to connect the sensor to my wifi network, and the server side part was develop with NodeJS and data is stored into mongoDB."
+  }],
+  "knowledge": [{
+    "title": "Operating Systems",
+    "description": "Windows, Debian, Ubuntu, macOS"
+  }, {
+    "title": "Languages",
+    "description": "C#, Javascript, HTML, CSS"
+  }, {
+    "title": "Framewoks/runtimes",
+    "description": ".NET, NodeJS, ZF2, Symfony"
+  }, {
+    "title": "Databases",
+    "description": "MSSQL, MySQL, PostgreSQL, MongoDB, DynamoDB, Neo4j"
+  }, {
+    "title": "Source control",
+    "description": "GIT, TFS, VSS, SVN"
+  }, {
+    "title": "IDE",
+    "description": "Visual Studio, PhpStorm, Atom, vi"
+  }, {
+    "title": "Other tools",
+    "description": "JIRA, Mantis, Redmine, ..."
+  }, {
     "title": "Languages",
     "description": "French (native), English (fluent), Spanish (elementary)"
   }, {
