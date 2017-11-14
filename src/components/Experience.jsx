@@ -6,7 +6,7 @@ class Experience extends Component {
   render() {
     return (
       <section className="section experience">
-        <h3 class="section--title">Experience</h3>
+        <h3 className="section--title">Experience</h3>
         {this.props.experience.map(item => <ExperienceItem {...item} key={Math.random(0, 1)}/>)}
       </section>
     );
@@ -14,13 +14,13 @@ class Experience extends Component {
 }
 
 const ExperienceItem = props => (
-  <div class="job">
+  <div className="job">
     <span className="job--title title-1">{props.jobTitle}</span>
     <span className="job--company title-2">{props.company}</span>
 
-    <span className="job--date">
-      <span className="job--dateStart">{moment(props.startDate.month + ' ' + props.startDate.year, 'MM YYYY').format('MMM YYYY')}</span>
-      <span className="job--dateEnd">
+    <span className="job--date date">
+      <span className="job--dateStart dateStart">{moment(props.startDate.month + ' ' + props.startDate.year, 'MM YYYY').format('MMM YYYY')}</span>
+      <span className="job--dateEnd dateEnd">
         {props.endDate && moment(props.endDate.month + ' ' + props.endDate.year, 'MM YYYY').format('MMM YYYY')}
         {!props.endDate && 'present'}
       </span>

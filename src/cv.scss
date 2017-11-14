@@ -50,7 +50,7 @@ ul {
 
 body {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 960px;
   padding: 50px;
   color: $black;
   font-family: 'Lato', sans-serif;
@@ -121,43 +121,51 @@ body {
       font-style: italic;
     }
 
-    .job {
-      .job--date {
-        color: $grey;
-        font-family: 'Montserrat',sans-serif;
-        font-size: 13px;
-        margin-left: 5px;
+    .date {
+      color: $grey;
+      font-family: 'Montserrat',sans-serif;
+      font-size: 13px;
+      margin-left: 5px;
 
-        .job--dateStart {
-          &:before {
-            content: '(';
-          }
-
-          &:after {
-            margin-left: 3px;
-            content: '-';
-          }
+      .dateStart {
+        &:before {
+          content: '(';
         }
 
-        .job--dateEnd {
+        &:after {
           margin-left: 3px;
-
-          &:after {
-            content: ')';
-          }
+          content: '-';
         }
       }
 
+      .dateEnd {
+        margin-left: 3px;
+
+        &:after {
+          content: ')';
+        }
+      }
+    }
+
+    .job {
       .job--link {
         display: inline-block;
         float: right;
       }
 
       .job--project {
-        margin: 5px;
-        padding: 10px;
-        border: 1px solid $lightgrey;
+        margin: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $lightgrey;
+
+        a {
+          font-size: 0.8em;
+        }
       }
+    }
+
+    .training {
+      margin-bottom: 10px;
     }
   }
 }
