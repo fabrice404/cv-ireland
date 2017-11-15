@@ -60,7 +60,7 @@
       "year": 2016,
       "month": 4
     },
-    "description": "Octave is an omnichannel ERP that natively integrates an e-commerce solution.",
+    "description": "Octave is an omnichannel ERP that natively integrates an e-commerce solution. ",
     "projects": [{
       "teamSize": 12,
       "responsibilities": [
@@ -161,7 +161,7 @@
     "description": "Windows, Debian, Ubuntu, macOS"
   }, {
     "title": "Languages",
-    "description": "C#, Javascript, HTML, CSS"
+    "description": "C#, Javascript, HTML, CSS/LESS/SASS, XML/XSLT, C/C++"
   }, {
     "title": "Framewoks/runtimes",
     "description": ".NET, NodeJS, ZF2, Symfony"
@@ -176,12 +176,12 @@
     "description": "Visual Studio, PhpStorm, Atom, vi"
   }, {
     "title": "Other tools",
-    "description": "JIRA, Mantis, Redmine, ..."
+    "description": "JIRA, Trello, Mantis, Redmine, Docker, ..."
   }, {
     "title": "Languages",
     "description": "French (native), English (fluent), Spanish (elementary)"
   }, {
     "title": "Interests",
-    "description": "Coding, IoT/Electronics, Video games, Running, Cycling"
+    "description": "Coding, IoT/Electronics, Video games, Ice hockey, Running, Moutain bike"
   }]
 }

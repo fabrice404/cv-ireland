@@ -5,7 +5,7 @@ import ListItem from './ListItem'
 class Knowledge extends Component {
   render() {
     return (<section className="section knowledge">
-      <h3 className="section--title">Knowledge</h3>
+      <h3 className="section--title">IT skills & languages</h3>
       <table>{this.props.knowledge.map(item => <KnowledgeItem {...item} key={Math.random(0, 1)}/>)}</table>
     </section>);
   }
