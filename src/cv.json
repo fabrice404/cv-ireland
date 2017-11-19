@@ -60,13 +60,15 @@
       "year": 2016,
       "month": 4
     },
-    "description": "Octave is an omnichannel ERP that natively integrates an e-commerce solution. ",
+    "description": "Octave is a cloud based omnichannel ERP that natively integrates an e-commerce solution.",
     "projects": [{
       "teamSize": 12,
       "responsibilities": [
         "Developed the e-commerce framework using ASP.NET / C#, used it to release over 150 b2b & b2c websites.",
-        "Technical mentor and architect for the web team comprised of 4 front-end developers, 4 back-end developers and 4 marketing consultants, managed releases planning and tasks assignment.",
-        "Wrote ticketing and bug tracker website for 300 clients, directly linked to TFS code source control database for live feedback.",
+        "Technical mentor and architect for the web team comprised of 4 front-end developers, 4 back-end developers and 4 marketing consultants.",
+        "Technical contact for clients with specific developments.",
+        "Managed releases planning and tasks assignment.",
+        "Wrote ticketing and bug tracker website used by 300 clients, directly linked to TFS code source control database for live feedback.",
         "Developed tools to help system administrators to automagically populate and maintain Active Directory, IIS and SQL Server databases.",
         "Developed webservices based on Windows Management Instrumentation for server hardware monitoring on Centreon/Nagios.",
         "Helped system administrators for advanced tasks and week-end monitoring."
@@ -154,7 +156,7 @@
     "description": "I developed a website to manage my family's personnal budget. The webiste is developed with PHP and Symfony2, the data is stored into a PostgreSQL server. I am migrating this project to Amazon Web Services with API Gateway, Lambda functions and RDS, and I will open-source it when it will be finished."
   }, {
     "title": "Wifi thermal sensors",
-    "description": "I built temperature sensors for my house to optimize energy cosumption. The hardware part was built with an ESP8266 module to connect the sensor to my wifi network, and the server side part was develop with NodeJS and data is stored into MongoDB."
+    "description": "I built temperature sensors for my house to optimize energy cosumption. The hardware part was built with an ESP8266 module used to connect the sensor to my wifi network. The server side part was develop with NodeJS and data is stored into MongoDB."
   }],
   "knowledge": [{
     "title": "Operating Systems",
