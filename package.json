@@ -19,8 +19,9 @@
     "start-js": "react-scripts start",
     "build-js": "react-scripts build",
     "start": "npm-run-all --aggregate-output --parallel start-js watch-css",
-    "build": "npm run build-css && build-js",
+    "build": "npm run build-css && npm run build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "homepage": "https://fabrice.lamant.io/cv"
 }
