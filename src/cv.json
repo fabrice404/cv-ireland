@@ -74,7 +74,7 @@
         "Helped system administrators for advanced tasks and week-end monitoring."
       ],
       "environment": [
-        "ASP.NET 4/4.5, C# 4/5, MSSQL 2010/2012/2014, IIS7/8, Windows Server 2012/2012R2, TFS"
+        "ASP.NET 4/4.5, C# 4/5, MSSQL 2010/2012/2014, IIS7/8, Windows Server 2012/2012R2, VSS/TFS"
       ],
       "link": "https://www.octave.biz/CT-488-references.aspx"
     }]
@@ -90,12 +90,16 @@
       "year": 2012,
       "month": 9
     },
+    "description": "Octave is a cloud based omnichannel ERP that natively integrates an e-commerce solution.",
     "projects": [{
       "teamSize": 3,
       "responsibilities": [
         "Developed features for e-commerce websites with ASP.NET and C#, integrated new payment systems (ATOS SIPS, Paybox, PayPal, ) and new delivering providers (So Colissimo, Kiala, Chronopost, DPD, etc.)",
         "Developed SaaS platform connection tool using the Windows COM interop MSTSCLib which allow clients to connect to any RDP server with no need of a tool like Citrix.",
         "Developed system monitoring tools (availability, load, etc.)"
+      ],
+      "environment": [
+        "ASP.NET 2/3.5, C# 2/3, MSSQL 2008/2010, IIS6/7, Windows Server 2008/2008R2, TFS"
       ]
     }]
   }, {
