@@ -3,7 +3,6 @@ import ListItem from './ListItem'
 
 class Education extends Component {
   render() {
-    console.log(this.props);
     return (
       <section className="section education">
         <h3 className="section--title">Education</h3>
