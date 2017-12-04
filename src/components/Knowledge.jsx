@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import moment from 'moment';
-import ListItem from './ListItem'
 
 class Knowledge extends Component {
   render() {

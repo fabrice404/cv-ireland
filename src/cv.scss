@@ -83,6 +83,18 @@ body {
       font-weight: 500;
       text-transform: uppercase;
     }
+
+    .me--contact {
+      span {
+        display: inline-block;
+        padding: 20px 10px 0;
+      }
+
+      svg {
+        color: $primary;
+        margin-right: 5px;
+      }
+    }
   }
 
   .section {

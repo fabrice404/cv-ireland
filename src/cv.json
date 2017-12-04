@@ -2,7 +2,10 @@
   "firstName": "Fabrice",
   "lastName": "Lamant",
   "jobTitle": "Software engineer",
-  "summary": "Software engineer with 10+ years of experience in developing complex web applications, e-commerce websites and APIs, and 5 years of experience in mentoring junior software engineers. Proficient in variety of platforms, languages and systems. Enthusiastic team member and always excited about new challenges.",
+  "email": "fabrice.lamant@gmail.com",
+  "phone": "+33 642 029 081",
+  "skype": "fabrice.lamant",
+  "summary": "Software engineer with 10+ years of experience in developing complex web applications, e-commerce websites and APIs, and 5 years of experience in mentoring junior software engineers. Proficient in variety of platforms, languages and systems. Enthusiastic team member and always excited about new challenges.\nLooking for an opportunity as .NET or javascript software engineer in Dublin, Ireland.",
   "experience": [{
     "jobTitle": "Lead software engineer",
     "company": "iDVROOM",
@@ -64,19 +67,21 @@
       "year": 2016,
       "month": 4
     },
-    "description": "Octave is an omnichannel ERP that natively integrates an e-commerce solution. ",
+    "description": "Octave is a cloud based omnichannel ERP that natively integrates an e-commerce solution.",
     "projects": [{
       "teamSize": 12,
       "responsibilities": [
         "Developed the e-commerce framework using ASP.NET / C#, used it to release over 150 b2b & b2c websites.",
-        "Technical mentor and architect for the web team comprised of 4 front-end developers, 4 back-end developers and 4 marketing consultants, managed releases planning and tasks assignment.",
-        "Wrote ticketing and bug tracker website for 300 clients, directly linked to TFS code source control database for live feedback.",
+        "Technical mentor and architect for the web team comprised of 4 front-end developers, 4 back-end developers and 4 marketing consultants.",
+        "Technical contact for clients with specific developments.",
+        "Managed releases planning and tasks assignment.",
+        "Wrote ticketing and bug tracker website used by 300 clients, directly linked to TFS code source control database for live feedback.",
         "Developed tools to help system administrators to automagically populate and maintain Active Directory, IIS and SQL Server databases.",
         "Developed webservices based on Windows Management Instrumentation for server hardware monitoring on Centreon/Nagios.",
         "Helped system administrators for advanced tasks and week-end monitoring."
       ],
       "environment": [
-        "ASP.NET 4/4.5, C# 4/5, MSSQL 2010/2012/2014, IIS7/8, Windows Server 2012/2012R2, TFS"
+        "ASP.NET 4/4.5, C# 4/5, MSSQL 2010/2012/2014, IIS7/8, Windows Server 2012/2012R2, VSS/TFS"
       ],
       "link": "https://www.octave.biz/CT-488-references.aspx"
     }]
@@ -92,12 +97,16 @@
       "year": 2012,
       "month": 9
     },
+    "description": "Octave is a cloud based omnichannel ERP that natively integrates an e-commerce solution.",
     "projects": [{
       "teamSize": 3,
       "responsibilities": [
         "Developed features for e-commerce websites with ASP.NET and C#, integrated new payment systems (ATOS SIPS, Paybox, PayPal, ) and new delivering providers (So Colissimo, Kiala, Chronopost, DPD, etc.)",
         "Developed SaaS platform connection tool using the Windows COM interop MSTSCLib which allow clients to connect to any RDP server with no need of a tool like Citrix.",
         "Developed system monitoring tools (availability, load, etc.)"
+      ],
+      "environment": [
+        "ASP.NET 2/3.5, C# 2/3, MSSQL 2008/2010, IIS6/7, Windows Server 2008/2008R2, TFS"
       ]
     }]
   }, {
@@ -158,7 +167,7 @@
     "description": "I developed a website to manage my family's personnal budget. The webiste is developed with PHP and Symfony2, the data is stored into a PostgreSQL server. I am migrating this project to Amazon Web Services with API Gateway, Lambda functions and RDS, and I will open-source it when it will be finished."
   }, {
     "title": "Wifi thermal sensors",
-    "description": "I built temperature sensors for my house to optimize energy cosumption. The hardware part was built with an ESP8266 module to connect the sensor to my wifi network, and the server side part was develop with NodeJS and data is stored into MongoDB."
+    "description": "I built temperature sensors for my house to optimize energy cosumption. The hardware part was built with an ESP8266 module used to connect the sensor to my wifi network. The server side part was develop with NodeJS and data is stored into MongoDB."
   }],
   "knowledge": [{
     "title": "Operating Systems",

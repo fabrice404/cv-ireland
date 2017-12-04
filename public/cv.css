@@ -47,6 +47,12 @@ body {
       font-size: 1.3em;
       font-weight: 500;
       text-transform: uppercase; }
+    body .me .me--contact span {
+      display: inline-block;
+      padding: 20px 10px 0; }
+    body .me .me--contact svg {
+      color: #188fa7;
+      margin-right: 5px; }
   body .section .section--title {
     border-bottom: 1px solid #e8e8e8;
     font-family: 'Montserrat', sans-serif;
