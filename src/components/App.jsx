@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import fontawesome from '@fortawesome/fontawesome'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelopeOpen } from '@fortawesome/fontawesome-free-solid';
-import { faSkype } from '@fortawesome/fontawesome-free-brands';
+import { faSkype, faGithub } from '@fortawesome/fontawesome-free-brands';
 
 import nl2br from 'react-newline-to-break';
 
@@ -34,6 +34,10 @@ class App extends Component {
             <span>
               <FontAwesomeIcon icon={faSkype} />
               {this.props.cv.skype}
+            </span>
+            <span>
+              <FontAwesomeIcon icon={faGithub} />
+              {this.props.cv.github}
             </span>
           </div>
         </header>
