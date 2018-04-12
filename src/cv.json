@@ -7,195 +7,261 @@
   "skype": "fabrice.lamant",
   "github": "github.com/fabrice404",
   "summary": "Software engineer with 10+ years of experience in developing complex web applications, e-commerce websites and APIs, and 5 years of experience in mentoring junior software engineers. Proficient in variety of platforms, languages and systems. Enthusiastic team member and always excited about new challenges.",
-  "experience": [{
-    "jobTitle": "Lead software engineer",
-    "company": "iDVROOM",
-    "link": "https://www.idvroom.com/",
-    "startDate": {
-      "year": 2016,
-      "month": 6
-    },
-    "endDate": {
-      "year": 2017,
-      "month": 12
-    },
-    "description": "iDVROOM is a carpooling service focusing on everyday home to work commute. The company is a subsidiary of the French national railway (SNCF).",
-    "projects": [{
-      "title": "HiPay (Tic & Tac)",
-      "teamSize": 6,
-      "role": "Lead software engineer & scrum master",
-      "description": "This project had multiple objectives. Migrate banking partner to be conform to parent house requirements. Anticipate payments increase and related flow analysis. Improve and automate fraud management by limiting manual processing. Facilitate and automate cross-checking of different bank flows.",
-      "responsibilities": [
-        "Leading the project after departure of the previous lead software engineer.",
-        "Designing the whole payment module according to technical, marketing and accounting constraints.",
-        "Developing payment system and integrating Hipay’s payment and marketplace APIs.",
-        "Migrating data from MongoDB to PostgreSQL.",
-        "Implementing functional and unit tests to avoid regressions.",
-        "Building a micro-service for development and testing environments with WebSockets.",
-        "Writing technical and functional documentation.",
-        "Being the scrum master of the team (two-week sprints, daily meetings, sprint pokers, retrospectives, etc.).",
-        "Reporting project progress directly to CTO and CEO."
-      ],
-      "environment": [
-        "PHP, Zend Framework 2, PostgreSQL, Behat, PHPUnit, Docker, SOAP & REST APIs,",
-        "JavaScript, NodeJS, AWS Elastic Beanstalk, WebSockets,",
-        "GIT, Jira, ..."
+  "experience": [
+    {
+      "jobTitle": "Senior software engineer",
+      "company": "Shutterstock",
+      "link": "https://www.shutterstock.com/",
+      "startDate": {
+        "year": 2018,
+        "month": 1
+      },
+      "description": "Shutterstock is an American stock photography, stock footage, stock music, and editing tools provider headquartered in New York City.",
+      "projects": [
+        {
+          "title": "Shutterstock Editorial",
+          "environment": [
+            "JavaScript, NodeJS, AWS, Neo4j",
+            "Jenkins, New Relic, Sumo Logic",
+            "GIT, Jira, ..."
+          ]
+        }
       ]
-    }, {
-      "title": "Speed API",
-      "teamSize": 3,
-      "role": "Software engineer",
-      "description": "Creating different easily scalable APIs to quickly respond the needs of strategic partners, able to handle 2000% traffic growth during peaks.",
-      "responsibilities": [
-        "Developing an API for the french national rail company (SNCF) to integrate iDVROOM carpools on their trip search, approximatively 300 000 calls per day.",
-        "Developing an API for the car manufacturer Renault to integrate iDVROOM's carpools on the cars' R Link dashboards and into My Renault application. This service will be deployed into 180 000 cars in the first quarter of 2018."
-      ],
-      "environment": [
-        "JavaScript, NodeJS, Amazon API Gateway, AWS Lambda,",
-        "Amazon RDS (PostgreSQL), Amazon DynamoDB"
-      ],
-      "link": "https://aws.amazon.com/fr/solutions/case-studies/idvroom/"
-    }]
-  }, {
-    "jobTitle": "Lead web developer",
-    "company": "Octave",
-    "link": "https://www.octave.biz/",
-    "startDate": {
-      "year": 2012,
-      "month": 10
     },
-    "endDate": {
-      "year": 2016,
-      "month": 4
-    },
-    "description": "Octave is a cloud based omnichannel ERP that natively integrates an e-commerce solution.",
-    "projects": [{
-      "teamSize": 12,
-      "responsibilities": [
-        "Developed the e-commerce framework using ASP.NET / C#, used it to release over 150 b2b & b2c websites.",
-        "Technical mentor and architect for the web team comprised of 4 front-end developers, 4 back-end developers and 4 marketing consultants.",
-        "Technical contact for clients with specific developments.",
-        "Managed releases planning and tasks assignment.",
-        "Wrote ticketing and bug tracker website used by 300 clients, directly linked to TFS code source control database for live feedback.",
-        "Developed tools to help system administrators to automagically populate and maintain Active Directory, IIS and SQL Server databases.",
-        "Developed webservices based on Windows Management Instrumentation for server hardware monitoring on Centreon/Nagios.",
-        "Helped system administrators for advanced tasks and week-end monitoring."
-      ],
-      "environment": [
-        "ASP.NET 4/4.5, C# 4/5, MSSQL 2010/2012/2014, IIS7/8, Windows Server 2012/2012R2, VSS/TFS"
-      ],
-      "link": "https://www.octave.biz/CT-488-references.aspx"
-    }]
-  }, {
-    "jobTitle": "Web developer",
-    "company": "Octave",
-    "link": "https://www.octave.biz/",
-    "startDate": {
-      "year": 2009,
-      "month": 2
-    },
-    "endDate": {
-      "year": 2012,
-      "month": 9
-    },
-    "description": "Octave is a cloud based omnichannel ERP that natively integrates an e-commerce solution.",
-    "projects": [{
-      "teamSize": 3,
-      "responsibilities": [
-        "Developed features for e-commerce websites with ASP.NET and C#, integrated new payment systems (ATOS SIPS, Paybox, PayPal, ) and new delivering providers (So Colissimo, Kiala, Chronopost, DPD, etc.)",
-        "Developed SaaS platform connection tool using the Windows COM interop MSTSCLib which allow clients to connect to any RDP server with no need of a tool like Citrix.",
-        "Developed system monitoring tools (availability, load, etc.)"
-      ],
-      "environment": [
-        "ASP.NET 2/3.5, C# 2/3, MSSQL 2008/2010, IIS6/7, Windows Server 2008/2008R2, TFS"
+    {
+      "jobTitle": "Lead software engineer",
+      "company": "iDVROOM",
+      "link": "https://www.idvroom.com/",
+      "startDate": {
+        "year": 2016,
+        "month": 6
+      },
+      "endDate": {
+        "year": 2017,
+        "month": 12
+      },
+      "description": "iDVROOM is a carpooling service focusing on everyday home to work commute. The company is a subsidiary of the French national railway (SNCF).",
+      "projects": [
+        {
+          "title": "HiPay (Tic & Tac)",
+          "teamSize": 6,
+          "role": "Lead software engineer & scrum master",
+          "description": "This project had multiple objectives. Migrate banking partner to be conform to parent house requirements. Anticipate payments increase and related flow analysis. Improve and automate fraud management by limiting manual processing. Facilitate and automate cross-checking of different bank flows.",
+          "responsibilities": [
+            "Leading the project after departure of the previous lead software engineer.",
+            "Designing the whole payment module according to technical, marketing and accounting constraints.",
+            "Developing payment system and integrating Hipay’s payment and marketplace APIs.",
+            "Migrating data from MongoDB to PostgreSQL.",
+            "Implementing functional and unit tests to avoid regressions.",
+            "Building a micro-service for development and testing environments with WebSockets.",
+            "Writing technical and functional documentation.",
+            "Being the scrum master of the team (two-week sprints, daily meetings, sprint pokers, retrospectives, etc.).",
+            "Reporting project progress directly to CTO and CEO."
+          ],
+          "environment": [
+            "PHP, Zend Framework 2, PostgreSQL, Behat, PHPUnit, Docker, SOAP & REST APIs,",
+            "JavaScript, NodeJS, AWS Elastic Beanstalk, WebSockets,",
+            "GIT, Jira, ..."
+          ]
+        },
+        {
+          "title": "Speed API",
+          "teamSize": 3,
+          "role": "Software engineer",
+          "description": "Creating different easily scalable APIs to quickly respond the needs of strategic partners, able to handle 2000% traffic growth during peaks.",
+          "responsibilities": [
+            "Developing an API for the french national rail company (SNCF) to integrate iDVROOM carpools on their trip search, approximatively 300 000 calls per day.",
+            "Developing an API for the car manufacturer Renault to integrate iDVROOM's carpools on the cars' R Link dashboards and into My Renault application. This service will be deployed into 180 000 cars in the first quarter of 2018."
+          ],
+          "environment": [
+            "JavaScript, NodeJS, Amazon API Gateway, AWS Lambda,",
+            "Amazon RDS (PostgreSQL), Amazon DynamoDB"
+          ],
+          "link": "https://aws.amazon.com/fr/solutions/case-studies/idvroom/"
+        }
       ]
-    }]
-  }, {
-    "jobTitle": "Web developer",
-    "company": "OpenPortal",
-    "link": "https://www.openportal.fr/",
-    "startDate": {
-      "year": 2007,
-      "month": 3
     },
-    "endDate": {
-      "year": 2009,
-      "month": 1
-    },
-    "description": "OpenPortal is a training, skills and human resources management solution for HR decision makers and training centers.",
-    "projects": [{
-      "teamSize": 16,
-      "responsibilities": [
-        "Developed calendar and planning modules for web-based application.",
-        "Migrated modules of the application from classic ASP and VB to ASP.NET and C#."
-      ],
-      "environment": [
-        "ASP, VB, ASP.NET 2, C# 2, MSSQL 2005, IIS6, VSS, SVN"
+    {
+      "jobTitle": "Lead web developer",
+      "company": "Octave",
+      "link": "https://www.octave.biz/",
+      "startDate": {
+        "year": 2012,
+        "month": 10
+      },
+      "endDate": {
+        "year": 2016,
+        "month": 4
+      },
+      "description": "Octave is a cloud based omnichannel ERP that natively integrates an e-commerce solution.",
+      "projects": [
+        {
+          "teamSize": 12,
+          "responsibilities": [
+            "Developed the e-commerce framework using ASP.NET / C#, used it to release over 150 b2b & b2c websites.",
+            "Technical mentor and architect for the web team comprised of 4 front-end developers, 4 back-end developers and 4 marketing consultants.",
+            "Technical contact for clients with specific developments.",
+            "Managed releases planning and tasks assignment.",
+            "Wrote ticketing and bug tracker website used by 300 clients, directly linked to TFS code source control database for live feedback.",
+            "Developed tools to help system administrators to automagically populate and maintain Active Directory, IIS and SQL Server databases.",
+            "Developed webservices based on Windows Management Instrumentation for server hardware monitoring on Centreon/Nagios.",
+            "Helped system administrators for advanced tasks and week-end monitoring."
+          ],
+          "environment": [
+            "ASP.NET 4/4.5, C# 4/5, MSSQL 2010/2012/2014, IIS7/8, Windows Server 2012/2012R2, VSS/TFS"
+          ],
+          "link": "https://www.octave.biz/CT-488-references.aspx"
+        }
       ]
-    }]
-  }],
-  "education": [{
-    "title": "Symfony 2/3 training",
-    "description": ["Advanced PHP & Symfony 2/3 training"],
-    "year": 2016
-  }, {
-    "title": "Microsoft Professional Certification 70-315",
-    "description": ["Developing and Implementing Web Applications with Microsoft Visual C# .NET and Microsoft Visual Studio .NET"],
-    "year": 2009
-  }, {
-    "title": "2-year degree in industrial IT and networks for industry and technical services",
-    "description": [
-      "Computers and microprocessors architecture",
-      "Programing basis (C, C++, Java) and internet programing languages (PHP, HTML, JavaScript, CSS)",
-      "Databases (Query languages, Merise)",
-      "Unified Modeling Language",
-      "Real-time computing (C, C++)",
-      "Network communications:  RS232 / RS422 / RS485, TCP/IP, CAN, I2C, etc.",
-      "Embedded systems",
-      "Applied physics and Mathematics"
-    ],
-    "year": 2006
-  }, {
-    "title": "High school diploma in sciences",
-    "description": ["Engineering science"],
-    "year": 2004
-  }],
-  "sideProject": [{
-    "title": "Webmaster and active member of the non-profit organisation Spirit LAN",
-    "description": "The NPO Spirit LAN is specialized in organizing video games and digital entertainment events. It has organised numerous events related to video-games and electronic sports. Thanks to its experience, Spirit-LAN regularly makes its know-how available to propose initiations, exhibitions and prevention forums on the benefits and harms of video games and internet."
-  }, {
-    "title": "Personnal budget software",
-    "description": "I developed a website to manage my family's personnal budget. The webiste is developed with PHP and Symfony2, the data is stored into a PostgreSQL server. I am migrating this project to Amazon Web Services with API Gateway, Lambda functions and RDS, and I will open-source it when it will be finished."
-  }, {
-    "title": "Wifi thermal sensors",
-    "description": "I built temperature sensors for my house to optimize energy cosumption. The hardware part was built with an ESP8266 module used to connect the sensor to my wifi network. The server side part was develop with NodeJS and data is stored into MongoDB."
-  }],
-  "knowledge": [{
-    "title": "Operating Systems",
-    "description": "Windows, Debian, Ubuntu, macOS"
-  }, {
-    "title": "Languages",
-    "description": "C#, Javascript, HTML, CSS/LESS/SASS, XML/XSLT, C/C++"
-  }, {
-    "title": "Framewoks/runtimes",
-    "description": ".NET, NodeJS, ZF2, Symfony"
-  }, {
-    "title": "Databases",
-    "description": "MSSQL, MySQL, PostgreSQL, MongoDB, DynamoDB, Neo4j"
-  }, {
-    "title": "Source control",
-    "description": "GIT, TFS, VSS, SVN"
-  }, {
-    "title": "IDE",
-    "description": "Visual Studio, PhpStorm, Atom, vi"
-  }, {
-    "title": "Other tools",
-    "description": "JIRA, Trello, Mantis, Redmine, Docker, ..."
-  }, {
-    "title": "Languages",
-    "description": "French (native), English (fluent), Spanish (elementary)"
-  }, {
-    "title": "Interests",
-    "description": "Coding, IoT/Electronics, Video games, Ice hockey, Running, Moutain bike"
-  }]
+    },
+    {
+      "jobTitle": "Web developer",
+      "company": "Octave",
+      "link": "https://www.octave.biz/",
+      "startDate": {
+        "year": 2009,
+        "month": 2
+      },
+      "endDate": {
+        "year": 2012,
+        "month": 9
+      },
+      "description": "Octave is a cloud based omnichannel ERP that natively integrates an e-commerce solution.",
+      "projects": [
+        {
+          "teamSize": 3,
+          "responsibilities": [
+            "Developed features for e-commerce websites with ASP.NET and C#, integrated new payment systems (ATOS SIPS, Paybox, PayPal, ) and new delivering providers (So Colissimo, Kiala, Chronopost, DPD, etc.)",
+            "Developed SaaS platform connection tool using the Windows COM interop MSTSCLib which allow clients to connect to any RDP server with no need of a tool like Citrix.",
+            "Developed system monitoring tools (availability, load, etc.)"
+          ],
+          "environment": [
+            "ASP.NET 2/3.5, C# 2/3, MSSQL 2008/2010, IIS6/7, Windows Server 2008/2008R2, TFS"
+          ]
+        }
+      ]
+    },
+    {
+      "jobTitle": "Web developer",
+      "company": "OpenPortal",
+      "link": "https://www.openportal.fr/",
+      "startDate": {
+        "year": 2007,
+        "month": 3
+      },
+      "endDate": {
+        "year": 2009,
+        "month": 1
+      },
+      "description": "OpenPortal is a training, skills and human resources management solution for HR decision makers and training centers.",
+      "projects": [
+        {
+          "teamSize": 16,
+          "responsibilities": [
+            "Developed calendar and planning modules for web-based application.",
+            "Migrated modules of the application from classic ASP and VB to ASP.NET and C#."
+          ],
+          "environment": [
+            "ASP, VB, ASP.NET 2, C# 2, MSSQL 2005, IIS6, VSS, SVN"
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Neo4j Certified Professional",
+      "description": [
+        "Neo4j graph database certification"
+      ],
+      "year": 2018
+    },
+    {
+      "title": "Symfony 2/3 training",
+      "description": [
+        "Advanced PHP & Symfony 2/3 training"
+      ],
+      "year": 2016
+    },
+    {
+      "title": "Microsoft Professional Certification 70-315",
+      "description": [
+        "Developing and Implementing Web Applications with Microsoft Visual C# .NET and Microsoft Visual Studio .NET"
+      ],
+      "year": 2009
+    },
+    {
+      "title": "2-year degree in industrial IT and networks for industry and technical services",
+      "description": [
+        "Computers and microprocessors architecture",
+        "Programing basis (C, C++, Java) and internet programing languages (PHP, HTML, JavaScript, CSS)",
+        "Databases (Query languages, Merise)",
+        "Unified Modeling Language",
+        "Real-time computing (C, C++)",
+        "Network communications:  RS232 / RS422 / RS485, TCP/IP, CAN, I2C, etc.",
+        "Embedded systems",
+        "Applied physics and Mathematics"
+      ],
+      "year": 2006
+    },
+    {
+      "title": "High school diploma in sciences",
+      "description": [
+        "Engineering science"
+      ],
+      "year": 2004
+    }
+  ],
+  "sideProject": [
+    {
+      "title": "Webmaster and active member of the non-profit organisation Spirit LAN",
+      "description": "The NPO Spirit LAN is specialized in organizing video games and digital entertainment events. It has organised numerous events related to video-games and electronic sports. Thanks to its experience, Spirit-LAN regularly makes its know-how available to propose initiations, exhibitions and prevention forums on the benefits and harms of video games and internet."
+    },
+    {
+      "title": "Personnal budget software",
+      "description": "I developed a website to manage my family's personnal budget. The webiste is developed with PHP and Symfony2, the data is stored into a PostgreSQL server. I am migrating this project to Amazon Web Services with API Gateway, Lambda functions and RDS, and I will open-source it when it will be finished."
+    },
+    {
+      "title": "Wifi thermal sensors",
+      "description": "I built temperature sensors for my house to optimize energy cosumption. The hardware part was built with an ESP8266 module used to connect the sensor to my wifi network. The server side part was develop with NodeJS and data is stored into MongoDB."
+    }
+  ],
+  "knowledge": [
+    {
+      "title": "Operating Systems",
+      "description": "Windows, Debian, Ubuntu, macOS"
+    },
+    {
+      "title": "Languages",
+      "description": "C#, Javascript, HTML, CSS/LESS/SASS, XML/XSLT, C/C++"
+    },
+    {
+      "title": "Framewoks/runtimes",
+      "description": ".NET, NodeJS, ZF2, Symfony"
+    },
+    {
+      "title": "Databases",
+      "description": "MSSQL, MySQL, PostgreSQL, MongoDB, DynamoDB, Neo4j"
+    },
+    {
+      "title": "Source control",
+      "description": "GIT, TFS, VSS, SVN"
+    },
+    {
+      "title": "IDE",
+      "description": "Visual Studio, PhpStorm, Atom, vi"
+    },
+    {
+      "title": "Other tools",
+      "description": "JIRA, Trello, Mantis, Redmine, Docker, ..."
+    },
+    {
+      "title": "Languages",
+      "description": "French (native), English (fluent), Spanish (elementary)"
+    },
+    {
+      "title": "Interests",
+      "description": "Coding, IoT/Electronics, Video games, Ice hockey, Running, Moutain bike"
+    }
+  ]
 }
