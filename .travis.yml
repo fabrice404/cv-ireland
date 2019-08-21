@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - node
+branches:
+  only:
+    - master
+before_install:
+  - echo "//npm.fontawesome.com/:_authToken=${FONTAWESOME_NPM_AUTH_TOKEN}" > .npmrc
+script:
+  - yarn build
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: node deploy.js
+  on:
+    branch: master

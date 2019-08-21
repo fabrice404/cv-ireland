@@ -214,6 +214,10 @@
   ],
   "sideProject": [
     {
+      "title": "GeoGuessr Timer - Chrome and Firefox plugin",
+      "description": "I developed a plugin that adds an in-game timer to the game GeoGuessr. It is available on Google Chrome and Mozilla Firefox, links can be found on my GitHub."
+    },
+    {
       "title": "Webmaster and active member of the non-profit organisation Spirit LAN",
       "description": "The NPO Spirit LAN is specialized in organizing video games and digital entertainment events. It has organised numerous events related to video-games and electronic sports. Thanks to its experience, Spirit-LAN regularly makes its know-how available to propose initiations, exhibitions and prevention forums on the benefits and harms of video games and internet."
     },
@@ -249,11 +253,11 @@
     },
     {
       "title": "IDE",
-      "description": "Visual Studio, PhpStorm, Atom, vi"
+      "description": "Visual Studio [code], PhpStorm, Atom, vi"
     },
     {
       "title": "Other tools",
-      "description": "JIRA, Trello, Mantis, Redmine, Docker, ..."
+      "description": "GitHub, JIRA, Trello, Mantis, Redmine, Docker, ..."
     },
     {
       "title": "Languages",
