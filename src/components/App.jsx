@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import fontawesome from '@fortawesome/fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelopeOpen } from '@fortawesome/fontawesome-free-solid';
 import { faSkype, faGithub } from '@fortawesome/fontawesome-free-brands';
