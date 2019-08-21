@@ -5,6 +5,7 @@ branches:
   only:
     - master
 before_install:
+  - echo "//npm.fontawesome.com/:_authToken=${FONTAWESOME_NPM_AUTH_TOKEN}"
   - echo "//npm.fontawesome.com/:_authToken=${FONTAWESOME_NPM_AUTH_TOKEN}" > .npmrc
 script:
   - yarn build
