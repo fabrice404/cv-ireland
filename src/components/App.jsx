@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 import fontawesome from '@fortawesome/fontawesome'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelopeOpen } from '@fortawesome/fontawesome-free-solid';
 import { faSkype, faGithub } from '@fortawesome/fontawesome-free-brands';
 
@@ -45,10 +45,10 @@ class App extends Component {
           <h3 className="section--title">Summary</h3>
           {nl2br(this.props.cv.summary)}
         </section>
-        <Experience experience={this.props.cv.experience}/>
-        <Education education={this.props.cv.education}/>
-        <SideProject sideProject={this.props.cv.sideProject}/>
-        <Knowledge knowledge={this.props.cv.knowledge}/>
+        <Experience experience={this.props.cv.experience} />
+        <Education education={this.props.cv.education} />
+        <SideProject sideProject={this.props.cv.sideProject} />
+        <Knowledge knowledge={this.props.cv.knowledge} />
         <section className="section reference">
           <h3 className="section--title">Reference</h3>
           Will be available on request
