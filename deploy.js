@@ -30,6 +30,7 @@ const ssh = new NodeSsh();
       },
       tick: (localPath, remotePath, error) => {
         if (error) {
+          console.log(error.split(process.env.SSH_FOLDER).join('*****secret*****'));
           failed.push(localPath);
         } else {
           successful.push(localPath);
