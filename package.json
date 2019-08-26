@@ -9,7 +9,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "moment": "^2.24.0",
-    "react": "^16.8.6",
+    "react": "^16.9.0",
     "react-dom": "^16.8.6",
     "react-newline-to-break": "^1.0.6"
   },
