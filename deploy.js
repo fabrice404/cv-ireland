@@ -5,7 +5,7 @@ const ssh = new NodeSsh();
 (async () => {
   let status;
   const failed = [];
-  const successful = [];
+  const folderFailed = [];
 
   // connect to ssh
   await ssh.connect({
@@ -30,14 +30,28 @@ const ssh = new NodeSsh();
       },
       tick: (localPath, remotePath, error) => {
         if (error) {
-          console.log(error.stack.split(process.env.SSH_FOLDER).join('*****secret*****'));
-          failed.push(localPath);
-        } else {
-          successful.push(localPath);
+          console.log(
+            localPath,
+            error.stack.split(process.env.SSH_FOLDER).join('*****secret*****')
+          );
+          folderFailed.push(localPath);
         }
       }
     });
+
+    for (let fail of folderFailed) {
+      try {
+        await ssh.putFile(fail, fail.replace(`${__dirname}/build`, process.env.SSH_FOLDER));
+      } catch (ex) {
+        console.log(
+          fail,
+          ex.stack.split(process.env.SSH_FOLDER).join('*****secret*****')
+        );
+        failed.push(fail);
+      }
+    }
   }
+
 
   console.log('the directory transfer was', status ? 'successful' : 'unsuccessful');
   if (failed.length > 0) {
