@@ -1,14 +1,13 @@
 const fs = require('fs');
-const NodeSsh = require('node-ssh');
-const path = require('path');
+const NodeSsh = require('node-ssh'); // eslint-disable-line import/no-extraneous-dependencies
 
 const ssh = new NodeSsh();
 
 const listFiles = (path) => {
   let files = [];
   const list = fs.readdirSync(path);
-  list.forEach((file) => {
-    file = `${path}/${file}`;
+  list.forEach((filename) => {
+    const file = `${path}/${filename}`;
     const stat = fs.statSync(file);
     if (stat && stat.isDirectory()) {
       files = files.concat(...listFiles(file));
@@ -32,18 +31,19 @@ const listFiles = (path) => {
 
   if (process.env.SSH_FOLDER.trim() !== '') {
     // delete what exists in current folder
-    await ssh.execCommand(`rm -rf ${process.env.SSH_FOLDER}/*`)
+    await ssh.execCommand(`rm -rf ${process.env.SSH_FOLDER}/*`);
 
     // upload files
     const files = listFiles(`${__dirname}/build`);
-    for (let source of files) {
+    for (let i = 0; i < files.length; i += 1) {
+      const source = files[i];
       const file = source.replace(`${__dirname}/build/`, '');
       const destination = `${process.env.SSH_FOLDER}/${file}`;
       try {
-        await ssh.putFile(source, destination);
+        await ssh.putFile(source, destination); // eslint-disable-line no-await-in-loop
       } catch (ex) {
         process.stderr.write(
-          `error on sending: ${file}\n${ex.stack.split(process.env.SSH_FOLDER).join('/*secret*/')}`
+          `error on sending: ${file}\n${ex.stack.split(process.env.SSH_FOLDER).join('/*secret*/')}`,
         );
         failed.push(file);
       }
@@ -51,7 +51,7 @@ const listFiles = (path) => {
   }
 
   process.stdout.write(
-    `the directory transfer was ${failed.length === 0 ? 'successful' : 'unsuccessful'}`
+    `the directory transfer was ${failed.length === 0 ? 'successful' : 'unsuccessful'}`,
   );
   if (failed.length > 0) {
     process.stderr.write(`failed transfers: \n${failed.join('\n')}`);

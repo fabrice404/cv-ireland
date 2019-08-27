@@ -1,29 +1,29 @@
-import React, {Component} from 'react';
-import ListItem from './ListItem'
+import React from 'react';
 
-class Education extends Component {
-  render() {
-    return (
-      <section className="section education">
-        <h3 className="section--title">Education</h3>
-        {this.props.education.map(item => <EducationItem {...item} key={Math.random(0, 1)}/>)}
-      </section>
-    );
-  }
-}
+import ListItem from './ListItem';
+import types from './proptypes';
 
-const EducationItem = props => (
+const Education = ({ education }) => (
+  <section className="section education">
+    <h3 className="section--title">Education</h3>
+    {education.map((item) => <EducationItem {...item} key={Math.random(0, 1)} />)}
+  </section>
+);
+Education.propTypes = types.education;
+
+const EducationItem = ({ title, year, description }) => (
   <div className="training">
-    <span className="training--title title-1">{props.title}</span>
+    <span className="training--title title-1">{title}</span>
     <span className="training--date date">
-      {props.year}
+      {year}
     </span>
     <div className="training--description">
       <ul>
-        {props.description.map(item => <ListItem item={item} key={Math.random(0, 1)}/>)}
+        {description.map((item) => <ListItem item={item} key={Math.random(0, 1)} />)}
       </ul>
     </div>
   </div>
 );
+EducationItem.propTypes = types.educationItem;
 
 export default Education;

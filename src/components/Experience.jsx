@@ -1,50 +1,94 @@
-import React, { Component } from 'react';
 import moment from 'moment';
-import ListItem from './ListItem'
+import React from 'react';
 
-class Experience extends Component {
-  render() {
-    return (
-      <section className="section experience">
-        <h3 className="section--title">Experience</h3>
-        {this.props.experience.map(item => <ExperienceItem {...item} key={Math.random(0, 1)} />)}
-      </section>
-    );
-  }
-}
+import ListItem from './ListItem';
+import types from './proptypes';
 
-const ExperienceItem = props => (
+const Experience = ({ experience }) => (
+  <section className="section experience">
+    <h3 className="section--title">Experience</h3>
+    {experience.map((item) => <ExperienceItem {...item} key={Math.random(0, 1)} />)}
+  </section>
+);
+Experience.propTypes = types.experience;
+
+const ExperienceItem = ({
+  jobTitle,
+  company,
+  startDate,
+  endDate,
+  link,
+  description,
+  projects,
+}) => (
   <div className="job">
-    <span className="job--title title-1">{props.jobTitle}</span>
-    <span className="job--company title-2">{props.company}</span>
+    <span className="job--title title-1">{jobTitle}</span>
+    <span className="job--company title-2">{company}</span>
 
     <span className="job--date date">
-      <span className="job--dateStart dateStart">{moment(props.startDate.month + ' ' + props.startDate.year, 'MM YYYY').format('MMM YYYY')}</span>
+      <span className="job--dateStart dateStart">{moment(`${startDate.month} ${startDate.year}`, 'MM YYYY').format('MMM YYYY')}</span>
       <span className="job--dateEnd dateEnd">
-        {props.endDate && moment(props.endDate.month + ' ' + props.endDate.year, 'MM YYYY').format('MMM YYYY')}
-        {!props.endDate && 'present'}
+        {endDate && moment(`${endDate.month} ${endDate.year}`, 'MM YYYY').format('MMM YYYY')}
+        {!endDate && 'present'}
       </span>
     </span>
 
-    {props.link && <span className="job--link">
-      <a href={props.link} target="_blank" rel="noreferrer noopener">{props.link}</a>
-    </span>}
+    {link && (
+    <span className="job--link">
+      <a href={link} target="_blank" rel="noreferrer noopener">{link}</a>
+    </span>
+    )}
 
-    {props.description && <div>{props.description}</div>}
-    {props.projects && props.projects.map(item => <Project {...item} key={Math.random(0, 1)} />)}
+    {description && <div>{description}</div>}
+    {projects && projects.map((item) => <Project {...item} key={Math.random(0, 1)} />)}
   </div>
 );
+ExperienceItem.propTypes = types.experienceItem;
 
-const Project = props => (
+const Project = ({
+  title,
+  description,
+  teamSize,
+  role,
+  responsibilities,
+  environment,
+  link,
+}) => (
   <div className="job--project">
-    {props.title && <div><span className="text-light">Project:</span>{props.title}</div>}
-    {props.description && <div>{props.description}</div>}
-    {props.teamSize && <div><span className="text-light">Team size:</span>{props.teamSize}</div>}
-    {props.role && <div><span className="text-light">Role:</span>{props.role}</div>}
-    {props.responsibilities && <div><span className="text-light">Responsibility:</span><ul>{props.responsibilities.map(item => <ListItem item={item} key={Math.random(0, 1)} />)}</ul></div>}
-    {props.environment && <div><span className="text-light">Environment:</span><ul>{props.environment.map(item => <ListItem item={item} key={Math.random(0, 1)} />)}</ul></div>}
-    {props.link && <div><a href={props.link} target="_blank" rel="noreferrer noopener">{props.link}</a></div>}
+    {title && (
+    <div>
+      <span className="text-light">Project:</span>
+      {title}
+    </div>
+    )}
+    {description && <div>{description}</div>}
+    {teamSize && (
+    <div>
+      <span className="text-light">Team size:</span>
+      {teamSize}
+    </div>
+    )}
+    {role && (
+    <div>
+      <span className="text-light">Role:</span>
+      {role}
+    </div>
+    )}
+    {responsibilities && (
+    <div>
+      <span className="text-light">Responsibility:</span>
+      <ul>{responsibilities.map((item) => <ListItem item={item} key={Math.random(0, 1)} />)}</ul>
+    </div>
+    )}
+    {environment && (
+    <div>
+      <span className="text-light">Environment:</span>
+      <ul>{environment.map((item) => <ListItem item={item} key={Math.random(0, 1)} />)}</ul>
+    </div>
+    )}
+    {link && <div><a href={link} target="_blank" rel="noreferrer noopener">{link}</a></div>}
   </div>
 );
+Project.propTypes = types.project;
 
 export default Experience;

@@ -1,19 +1,23 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class SideProject extends Component {
-  render() {
-    return (<section className="section side-project">
-      <h3 className="section--title">Side projects</h3>
-      {this.props.sideProject.map(item => <SideProjectItem {...item} key={Math.random(0, 1)}/>)}
-    </section>);
-  }
-}
+import types from './proptypes';
 
-const SideProjectItem = props => (<div>
-  <div className="project--title title-1">{props.title}</div>
-  <div className="project--description">
-    {props.description}
+const SideProject = ({ sideProject }) => (
+  <section className="section side-project">
+    <h3 className="section--title">Side projects</h3>
+    {sideProject.map((item) => <SideProjectItem {...item} key={Math.random(0, 1)} />)}
+  </section>
+);
+SideProject.propTypes = types.sideProject;
+
+const SideProjectItem = ({ title, description }) => (
+  <div>
+    <div className="project--title title-1">{title}</div>
+    <div className="project--description">
+      {description}
+    </div>
   </div>
-</div>);
+);
+SideProjectItem.propTypes = types.sideProjectItem;
 
 export default SideProject;
