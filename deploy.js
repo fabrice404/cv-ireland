@@ -1,11 +1,26 @@
-const path = require('path');
+const fs = require('fs');
 const NodeSsh = require('node-ssh');
+const path = require('path');
+
 const ssh = new NodeSsh();
 
+const listFiles = (path) => {
+  let files = [];
+  const list = fs.readdirSync(path);
+  list.forEach((file) => {
+    file = `${path}/${file}`;
+    const stat = fs.statSync(file);
+    if (stat && stat.isDirectory()) {
+      files = files.concat(...listFiles(file));
+    } else {
+      files.push(file);
+    }
+  });
+  return files;
+};
+
 (async () => {
-  let status;
   const failed = [];
-  const folderFailed = [];
 
   // connect to ssh
   await ssh.connect({
@@ -15,46 +30,31 @@ const ssh = new NodeSsh();
     port: 22,
   });
 
-  if (process.env.SSH_FOLDER !== '') {
+  if (process.env.SSH_FOLDER.trim() !== '') {
     // delete what exists in current folder
     await ssh.execCommand(`rm -rf ${process.env.SSH_FOLDER}/*`)
 
-    // copy directory
-    status = await ssh.putDirectory(`${__dirname}/build`, process.env.SSH_FOLDER, {
-      recursive: true,
-      concurrency: 10,
-      validate: (itemPath) => {
-        const baseName = path.basename(itemPath);
-        return baseName.substr(0, 1) !== '.' && // do not allow dot files
-          baseName !== 'node_modules'; // do not allow node_modules
-      },
-      tick: (localPath, remotePath, error) => {
-        if (error) {
-          console.log(
-            localPath,
-            error.stack.split(process.env.SSH_FOLDER).join('*****secret*****')
-          );
-          folderFailed.push(localPath);
-        }
+    // upload files
+    const files = listFiles(`${__dirname}/build`);
+    files.forEach((source) => {
+      const file = source.replace(`${__dirname}/build/`, '');
+      const destination = `${process.env.SSH_FOLDER}/${file}`;
+      try {
+        await ssh.putFile(source, destination);
+      } catch (ex) {
+        process.stderr.write(
+          `error on sending: ${file}\n${ex.stack.split(process.env.SSH_FOLDER).join('/*secret*/')}`
+        );
+        failed.push(file);
       }
     });
-
-    for (let fail of folderFailed) {
-      try {
-        await ssh.putFile(fail, fail.replace(`${__dirname}/build`, process.env.SSH_FOLDER));
-      } catch (ex) {
-        console.log(
-          fail,
-          ex.stack.split(process.env.SSH_FOLDER).join('*****secret*****')
-        );
-        failed.push(fail);
-      }
-    }
   }
 
-  console.log('the directory transfer was', failed.length === 0 ? 'successful' : 'unsuccessful');
+  process.stdout.write(
+    `the directory transfer was ${failed.length === 0 ? 'successful' : 'unsuccessful'}`
+  );
   if (failed.length > 0) {
-    console.log('failed transfers:', failed.join('\n'));
+    process.stderr.write(`failed transfers: \n${failed.join('\n')}`);
   }
   ssh.dispose();
 })();
