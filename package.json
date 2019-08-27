@@ -26,9 +26,7 @@
     "start-js": "react-scripts start",
     "build-js": "react-scripts build",
     "start": "npm-run-all --aggregate-output --parallel start-js watch-css",
-    "build": "npm run build-css && npm run build-js",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "npm run build-css && npm run build-js"
   },
   "homepage": "https://fabrice.lamant.io/",
   "browserslist": {
