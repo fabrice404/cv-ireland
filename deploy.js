@@ -36,7 +36,7 @@ const listFiles = (path) => {
 
     // upload files
     const files = listFiles(`${__dirname}/build`);
-    files.forEach((source) => {
+    for (let source of files) {
       const file = source.replace(`${__dirname}/build/`, '');
       const destination = `${process.env.SSH_FOLDER}/${file}`;
       try {
@@ -47,7 +47,7 @@ const listFiles = (path) => {
         );
         failed.push(file);
       }
-    });
+    }
   }
 
   process.stdout.write(
