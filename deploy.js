@@ -34,7 +34,7 @@ const uploadFiles = async (files) => {
     }
   }
   return failed;
-}
+};
 
 
 (async () => {
