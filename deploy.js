@@ -5,10 +5,10 @@ const ssh = new NodeSsh();
 
 const listFiles = (path) => {
   let files = [];
-  const list = fs.readdirSync(path);
+  const list = fs.readdirSync(`${path}`);
   list.forEach((filename) => {
     const file = `${path}/${filename}`;
-    const stat = fs.statSync(file);
+    const stat = fs.statSync(`${file}`);
     if (stat && stat.isDirectory()) {
       files = files.concat(...listFiles(file));
     } else {
@@ -18,8 +18,27 @@ const listFiles = (path) => {
   return files;
 };
 
-(async () => {
+const uploadFiles = (files) => {
   const failed = [];
+  for (let i = 0; i < files.length; i += 1) {
+    const source = files[i];
+    const file = source.replace(`${__dirname}/build/`, '');
+    const destination = `${process.env.SSH_FOLDER}/${file}`;
+    try {
+      await ssh.putFile(source, destination); // eslint-disable-line no-await-in-loop
+    } catch (ex) {
+      process.stderr.write(
+        `error on sending: ${file}\n${ex.stack.split(process.env.SSH_FOLDER).join('/*secret*/')}`,
+      );
+      failed.push(file);
+    }
+  }
+  return failed;
+}
+
+
+(async () => {
+  let failed = [];
 
   // connect to ssh
   await ssh.connect({
@@ -35,19 +54,7 @@ const listFiles = (path) => {
 
     // upload files
     const files = listFiles(`${__dirname}/build`);
-    for (let i = 0; i < files.length; i += 1) {
-      const source = files[i];
-      const file = source.replace(`${__dirname}/build/`, '');
-      const destination = `${process.env.SSH_FOLDER}/${file}`;
-      try {
-        await ssh.putFile(source, destination); // eslint-disable-line no-await-in-loop
-      } catch (ex) {
-        process.stderr.write(
-          `error on sending: ${file}\n${ex.stack.split(process.env.SSH_FOLDER).join('/*secret*/')}`,
-        );
-        failed.push(file);
-      }
-    }
+    failed = uploadFiles(files);
   }
 
   process.stdout.write(
