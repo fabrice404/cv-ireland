@@ -18,7 +18,7 @@ const listFiles = (path) => {
   return files;
 };
 
-const uploadFiles = (files) => {
+const uploadFiles = async (files) => {
   const failed = [];
   for (let i = 0; i < files.length; i += 1) {
     const source = files[i];
@@ -54,7 +54,7 @@ const uploadFiles = (files) => {
 
     // upload files
     const files = listFiles(`${__dirname}/build`);
-    failed = uploadFiles(files);
+    failed = await uploadFiles(files);
   }
 
   process.stdout.write(
